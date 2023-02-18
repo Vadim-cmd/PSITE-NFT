@@ -7,16 +7,57 @@ background repeat: no repeat
 
 z - index  - priority in showing the 
 */
-
-.page__left {
-    
+a {
+  text-decoration: none;
 }
-.page__main{
+li {
+  list-style-type: none;
+  /* Убираем маркеры */
+}
+body {
     background-color: black;
+    font-family: "Rubik";
+    font-weight: 600;
+    color: #FFFFFF;
 
 }
 
-.page__background{
+.header__container{
     
+   
+
+
+}
+
+.header__logo{
+
+}
+.header__menu{
+
+
+
+}
+.menu__link{
+  
+  width: 127px;
+  height: 25px;
+  left: 688.33px;
+  top: 59.4px;
+
+  font-family: 'Rubik';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20.9643px;
+  line-height: 25px;
+/* identical to box height */
+
+
+color: #FFFFFF;
+
+}
+.header__button{
+    
+    border: 4.65873px solid #FFA503;
+    border-radius: 17.4702px;
 
 }
