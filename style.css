@@ -12,7 +12,7 @@ body {
   background-color: black;
   font-family: "Rubik";
   font-weight: 600;
-  z-index: 3;
+  z-index: 5;
   
 }
 header {
@@ -49,7 +49,7 @@ nav ul li a {
   font-weight: bold;
 }
 
-.login a.button {
+.login a.button__login {
   display: inline-block;
   padding: 10px 20px;
   background-color: transparent;
@@ -96,18 +96,30 @@ nav ul li a {
   top: 0;
   left: 0;
 }
-.submit {
-  padding-top: 45px;
-  width: 156.4px;
-  height: 64px;
-  left: 347.6px;
-  top: 390px;
-  background: #FFA503;
-  border-radius: 8px;
-  margin-top: 48px;
-  margin-left: 151px;
+
+
+.email {
 
 }
+
+.button__subscribe {
+  display: flex;
+  align-items: center;
+  background-color: #FFA503;
+  font-size: 18px;
+  border: none;
+  width: 153.4px;
+  height: 64px;
+  border-radius: 8px;
+  margin-left: 542px;
+  margin-top: -64px;
+  padding-left: 56px;  
+}
+
+.subscribe {
+  
+}
+
 .subscribe__input {
   background-color: transparent;
   box-sizing: border-box;
@@ -124,7 +136,28 @@ nav ul li a {
   opacity: 0.5;
   line-height: 21px;
 }
-
 .subscribe__input::placeholder {
   color: #999999;
+}
+
+.main__coins {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fff;
+  font-weight: 500;
+  margin-top: 200px;
+  margin-left: 151px;
+}
+.coins__image {
+  margin-left: 151px;
+  margin-top: 20px;
+}
+.best__sellers {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #FFA503;
+  margin-left: 151px;
+  margin-top: 20px;
+  
 }
