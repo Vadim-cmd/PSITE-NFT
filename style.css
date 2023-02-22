@@ -7,101 +7,87 @@ background repeat: no repeat
 
 z - index  - priority in showing the 
 */
-a {
-  text-decoration: none;
-}
-li {
-  list-style-type: none;
-  /* Убираем маркеры */
-}
+
 body {
     background-color: black;
     font-family: "Rubik";
     font-weight: 600;
     color: #FFFFFF;
     margin: 0px;
-
-
 }
-
-.header__container{
+header {
   display: flex;
-  flex-direction: space-between;
-  max-width: 1100px;
-  
-    
-   
-
-
-}
-
-.header__logo{
-  position: absolute;
-  padding: 46px;
-
-
-}
-.header__menu{
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  position: absolute;
-  flex-direction: space-between;
+  padding: 20px; 
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+}
 
+.logo {
+  padding-left: 28px;
+  padding-top: 11px;
 }
-.menu__link{
-  width: 127px;
-  height: 25px;
-  left: 688.33px;
-  top: 59.4px;
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20.9643px;
-  line-height: 25px;
-/* identical to box height */
-  color: #FFFFFF;
-  padding-top: 59px;
-  padding-left: 50px;
+.nav {
+  padding-top: 51px;
 }
-.header__button{
-  padding: 21px 80px;
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: bold;
+}
+.li {
+  padding-right: 79px;
+}
+.login a.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #FFA503;
   box-sizing: border-box;
-  position: absolute;
-  width: 220.12px;
-  height: 71.05px;
-  left: 1351.03px;
-  top: 36.11px;
-  border: 4.65873px solid #FFA503;
-  border-radius: 17.4702px;
-  font-family: 'Rubik';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20.9643px;
-  line-height: 25px;
-/* identical to box height */
-  color: #FFFFFF;
+  position: flex-end;
+  border: 4px solid ;
+  border-radius: 15px;
+  padding: 15px 65px;
+  margin-top: 4px;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
 }
-
-.page__img {
-  
-  
-  
-  
+/*========================*/
+.main__page{
   
 
- 
 }
-.img__eclipse {
+.page__background{
   position: absolute;
-  background-position: left;
-  width: 478.68px;
-  height: 478.68px;
-  left: -256.23px;
-  top: -61.73px;
-
+  right:  0px;
+  top: 0px;
+  background-size: contain;
+  background-repeat: no-repeat; 
+  overflow-y: scroll;
+  z-index: 4;
+}
+.page__eclipse {
+  position: absolute;
+  width: 411px;
+  height: 411px;
   background: #D79F45;
   opacity: 0.45;
-  filter: blur(349.405px);
+  filter: blur(300px);
+  left:  0px;
+  
 
 }
