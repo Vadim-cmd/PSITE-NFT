@@ -65,8 +65,6 @@ nav ul li a {
 }
 /*========================*/
 .main__page{
-  
-
 }
 .page__background{
   position: absolute;
@@ -77,15 +75,10 @@ nav ul li a {
   overflow-y: scroll;
   z-index: 4;
 }
-.page__eclipse {
-  position: absolute;
-  width: 187px;
-  height: 187px;
-  border-radius: 50%;
-  background: #D79F45;
-  opacity: 0.45;
-  filter: blur(300px);
-  left:  0px;
+.main__text {
+  display: flex;
+  flex-direction: column;
+  color:#fff
   
-
+  
 }
