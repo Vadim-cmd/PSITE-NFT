@@ -84,15 +84,47 @@ nav ul li a {
   font-weight: 600;
   line-height: 56px;
   padding-top: 171px;
+  padding-bottom: 45px;
   padding-left: 151px;
   z-index: 5;
   overflow: hidden;
   position: relative; 
 }
 .main__text::before {
-  
   content: "Discover";
   color: #FFA503;
   top: 0;
   left: 0;
+}
+.submit {
+  padding-top: 45px;
+  width: 156.4px;
+  height: 64px;
+  left: 347.6px;
+  top: 390px;
+  background: #FFA503;
+  border-radius: 8px;
+  margin-top: 48px;
+  margin-left: 151px;
+
+}
+.subscribe__input {
+  background-color: transparent;
+  box-sizing: border-box;
+  width: 391.01px;
+  height: 64px;
+  margin-top: 48px;
+  margin-left: 151px;
+  border: 1px solid #FFA503;
+  border-radius: 8px;
+  padding: 22px 120px 21px 25px;
+  font-size: 18px;
+  font-weight: 300;
+  color: #fff;
+  opacity: 0.5;
+  line-height: 21px;
+}
+
+.subscribe__input::placeholder {
+  color: #999999;
 }
