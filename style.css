@@ -1,148 +1,107 @@
-/*forms / buttons / input
-
-position absolute
-right 0
-background size: contain
-background repeat: no repeat
-
-z - index  - priority in showing the 
-*/
+* {
+  box-sizing: border-box;
+}
 
 body {
-  background-color: black;
+  padding: 0;
+  margin: 0;
   font-family: "Rubik";
-  font-weight: 600;
-  z-index: 5;
 }
-header {
+
+button {
+  border: none;
+}
+
+.main {
+  background-image: url(/img/background.jpg);
+  background-repeat: no-repeat;
+  background-position: top right;
+  height: 1000px;
+  background-color: #000;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
+  padding: 20px 75px 20px 90px;
 }
-
+.header__logo {
+}
 .logo {
-  padding-left: 28px;
-  padding-top: 11px;
 }
-nav {
-  padding-top: 9px;
+.logo__image {
 }
-nav ul {
+.header__right {
   display: flex;
-  list-style: none;
 }
-
-nav ul li {
-  margin-right: 70px;
-}
-
-nav ul li a {
-  text-decoration: none;
+.header__list {
   color: #fff;
-  font-size: 18px;
-  line-height: 21px;
-  font-weight: bold;
-}
-.login a.button__login {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: transparent;
-  color: #ffa503;
-  box-sizing: border-box;
-  position: flex-end;
-  border: 4px solid;
-  border-radius: 15px;
-  padding: 15px 65px;
-  margin-top: 4px;
-  font-size: 18px;
-  line-height: 21px;
-  text-decoration: none;
-}
-/*========================*/
-.main__page {
-}
-.page__background {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  overflow-y: scroll;
-  z-index: 4;
+  margin-right: 180px;
 }
 
-.main__text {
+.pages {
+}
+.pages__item + .pages__item {
+  margin-left: 40px;
+}
+
+.header__button {
+}
+
+button.btn-yellow {
+  border: 4px solid #ffa503;
+  border-radius: 15px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+}
+.content {
+  padding-top: 50px;
+  padding-left: 90px;
+}
+
+.content__title {
   color: #fff;
   font-size: 48px;
-  font-weight: 600;
-  line-height: 56px;
-  padding-top: 171px;
-  padding-bottom: 45px;
-  padding-left: 151px;
-  z-index: 5;
-  overflow: hidden;
-  position: relative;
-}
-.main__text::before {
-  content: "Discover";
-  color: #ffa503;
-  top: 0;
-  left: 0;
-}
-.button__subscribe {
-  display: flex;
-  align-items: center;
-  background-color: #ffa503;
-  font-size: 18px;
-  border: none;
-  width: 153.4px;
-  height: 64px;
-  border-radius: 8px;
-  margin-left: 542px;
-  margin-top: -64px;
-  padding-left: 56px;
-}
-.subscribe__input {
-  background-color: transparent;
-  box-sizing: border-box;
-  width: 391.01px;
-  height: 64px;
-  margin-top: 48px;
-  margin-left: 151px;
-  border: 1px solid #ffa503;
-  border-radius: 8px;
-  padding: 22px 120px 21px 25px;
-  font-size: 18px;
-  font-weight: 300;
-  color: #fff;
-  opacity: 0.5;
-  line-height: 21px;
-}
-.subscribe__input::placeholder {
-  color: #999999;
+  width: 520px;
 }
 
-.main__coins {
-  font-size: 24px;
-  line-height: 28px;
+.orange {
+  color: orange;
+}
+
+.content__form {
+  display: flex;
+  align-items: center;
+}
+.form__button {
+  background-color: orange;
+  border-radius: 5px;
+  padding: 5px 15px;
+  margin-left: 10px;
+}
+
+.form__button img {
+  width: 38px;
+  height: 38px;
+}
+
+.form__input {
+  font-size: 18px;
   color: #fff;
-  font-weight: 500;
-  margin-top: 200px;
-  margin-left: 151px;
+  background-color: transparent;
+  padding: 15px;
+  border: 1px solid orange;
+  box-sizing: border-box;
+  border-radius: 5px;
 }
-.coins__image {
-  margin-left: 151px;
-  margin-top: 20px;
-}
-.best__sellers {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #ffa503;
-  margin-left: 151px;
-  margin-top: 20px;
+
+.form__input::placeholder {
+  font-size: 18px;
+  color: #fff;
+  opacity: 0.5;
+  font-weight: 300;
 }

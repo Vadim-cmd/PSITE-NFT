@@ -14,50 +14,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <a href="#"><img src="img/logo.svg" alt="Logo" /></a>
+    <div class="main">
+      <div class="header">
+        <div class="header__logo logo">
+          <img src="/img/logo.svg" alt="header__logo" class="logo__image" />
+        </div>
+        <div class="header__right">
+          <div class="header__list pages">
+            <span class="pages__item">About</span>
+            <span class="pages__item">About</span>
+            <span class="pages__item">About</span>
+          </div>
+          <div class="header__button">
+            <button class="btn-yellow">Login</button>
+          </div>
+        </div>
       </div>
-      <nav>
-        <ul>
-          <li><a href="#">Marketplace</a></li>
-          <li><a href="#">Artists</a></li>
-          <li><a href="#">Community</a></li>
-        </ul>
-      </nav>
-      <div class="login">
-        <a href="#" class="button__login">Login</a>
-      </div>
-    </header>
-    <div class="main__page">
-      <div class="page__background">
-        <img src="img/background.jpg" alt="" />
-      </div>
-      <div class="main__text">
-        unique NFTs <br />
-        and Digital arts on our <br />
-        platform with ease
-      </div>
-      <div class="email">
-        <form action="" class="subscribe">
+      <div class="content">
+        <h1 class="content__title">
+          <span class="orange">Discover</span> unique NFTs and Digital arts on
+          our platform with ease
+        </h1>
+
+        <form class="content__form form">
           <input
             type="email"
+            class="form__input"
             placeholder="Enter your email to get started"
-            required
-            class="subscribe__input"
           />
-          <button type="subscribe" class="button__subscribe">
-            <img src="img/Rocket.svg" alt="rocket" />
+          <button class="form__button">
+            <img src="/img/Rocket.svg" alt="rocket" />
           </button>
         </form>
-        <div class="main__coins">Trade with any of the following Coins</div>
-        <div class="coins__image">
-          <img src="img/coins.svg" alt="coins" />
-        </div>
-        <div class="best__sellers">
-          Best Sellers
-          <img src="img/fire.svg" alt="" />
-        </div>
       </div>
     </div>
   </body>
