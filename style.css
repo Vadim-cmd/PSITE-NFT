@@ -4,7 +4,7 @@
 
 body {
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Rubik";
 }
 
@@ -16,7 +16,7 @@ button {
   background-image: url(/img/background.jpg);
   background-repeat: no-repeat;
   background-position: top right;
-  height: 1000px;
+  height: 1710px;
   background-color: #000;
 }
 
@@ -24,24 +24,34 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 75px 20px 90px;
+  padding: 0px 75px 20px 90px;
 }
+
 .header__logo {
+  width: 100px;
+  height: 80px;
+  margin-top: 25px;
 }
+
 .logo {
 }
+
 .logo__image {
 }
+
 .header__right {
   display: flex;
 }
+
 .header__list {
   color: #fff;
   margin-right: 180px;
+  margin-top: 20px;
 }
 
 .pages {
 }
+
 .pages__item + .pages__item {
   margin-left: 40px;
 }
@@ -50,14 +60,19 @@ button {
 }
 
 button.btn-yellow {
-  border: 4px solid #ffa503;
-  border-radius: 15px;
   font-family: "Rubik";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 21px;
+  height: 61px;
+  width: 201px;
+  border: 3px solid #ffa503;
+  border-radius: 17px;
+  color: #fff;
+  background: none;
 }
+
 .content {
   padding-top: 50px;
   padding-left: 90px;
@@ -77,6 +92,7 @@ button.btn-yellow {
   display: flex;
   align-items: center;
 }
+
 .form__button {
   background-color: orange;
   border-radius: 5px;
@@ -100,8 +116,54 @@ button.btn-yellow {
 }
 
 .form__input::placeholder {
-  font-size: 18px;
+  font-size: 15px;
   color: #fff;
   opacity: 0.5;
   font-weight: 300;
+}
+
+/* == container ============================================== */
+
+.container {
+  margin-top: 100px;
+}
+
+.container__title {
+  width: 494px;
+  height: 33px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+  color: #ffffff;
+}
+
+.img-coins {
+}
+
+.container__items {
+  margin-top: 270px;
+}
+
+.items-title {
+  width: 161px;
+  height: 33px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 27px;
+  line-height: 33px;
+  color: #ffa503;
+}
+
+.items {
+  display: flex;
+  gap: 71px;
+}
+
+.item {
+  width: 450px;
+  height: 300px;
+  border-radius: 25px;
 }
